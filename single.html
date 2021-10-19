@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog para wordpress</title>
+    <!-- estilos css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- iconos -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,300&family=Oswald&display=swap" rel="stylesheet"> 
+</head>
+
+
+<!-- 
+       METODOLOGÍA  BEM
+
+       .bloque 
+
+       .bloque__elemento 
+
+       .bloque--modificador 
+
+       .bloque__elemento--modificador
+ -->
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- columna 1 -->
+                <div class="logo col-xs-12 col-sm-6">
+                   <a href="#"><img src="img/logo.png" alt="imagen de logo"></a>
+                </div>
+
+                <!-- columna 2 -->
+                <div class="redes-sociales col-xs-12 col-sm-6">
+                   <a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+                   <a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                   <a class="twitter" href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="col-md-12">
+                        <li><a href="#">Html</a></li>
+                        <li><a href="#">Css</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Jquery</a></li>
+                        <li><a href="#">Photoshop</a></li>
+                        <li><a href="#">Git</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="ad container hidden-xs">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/ad.jpg" alt="imagen de AD">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <div class="container">
+        <div class="row">
+            <!-- main -->
+            <section class="main col-md-8">
+
+                <!-- fila 1 -->
+                <div class="row posts single-post">
+
+                    <!-- article 1 -->
+                    <article class="col-sm-12 post">
+                        <div class="contenedor">
+                            <div class="thumb">
+                                <img src="img/1.jpg" width="700" alt="imagen 1">
+                            </div>
+
+                            <div class="info">
+                                <h2 class="titulo">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                <p class="fecha">7 de abril de 2016</p>
+                                <div class="categorias">
+                                    <a href="#">HTML</a>
+                                    <a href="#">CSS</a>
+                                </div>
+                                <div class="texto">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ullam ad quasi quam doloremque quia consequatur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos blanditiis, accusamus alias perspiciatis voluptatibus.
+                                    </p>
+
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ullam ad quasi quam doloremque quia consequatur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos blanditiis, accusamus alias perspiciatis voluptatibus.
+                                    </p>
+
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ullam ad quasi quam doloremque quia consequatur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos blanditiis, accusamus alias perspiciatis voluptatibus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+             </section>>   
+
+            <!-- aside -->
+            <aside class="sidebar col-md-4">
+                <!-- widget 1 -->
+                <div class="widget redes-sociales">
+                    <div class="titulo-seccion">
+                        <h3>Siguenos</h3>
+                        <div class="redes-sociales">
+                            <a class="youtube" href="https://www.youtube.com/">
+                                <i class="icono fa fa-youtube-play"></i>
+                                <span class="seguidores">270k</span>
+                            </a>
+                            <a class="facebook" href="https://www.facebook.com/">
+                                <i class="icono fa fa-facebook-square"></i>
+                                <span class="seguidores">60k</span>
+                            </a>
+                            <a class="twitter" href="https://twitter.com">
+                                <i class="icono fa fa-twitter-square"></i>
+                                <span class="seguidores">42k</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- widget 2 -->
+                <div class="widget boletin">
+                    <div class="titulo-seccion">
+                        <h3>Suscribete</h3>
+                        <form action="" class="formulario">
+                            <label for="email">Suscribete a nuestro boletín</label>
+                            <input type="email" id="email" placeholder="Correo Electrónico" required> 
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- widget 3 -->
+                <div class="widget ad">
+                    <div class="contenedor-ad">
+                        <a href="#"><img src="img/ad2.jpg" alt="imagen ad2"></a>
+                    </div>
+                </div>
+            </aside>
+
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- foto -->
+        <div class="ad container hidden-xs">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/ad.jpg" alt="imagen ad">
+                </div>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <nav class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Terminos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

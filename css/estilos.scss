@@ -1,0 +1,54 @@
+
+
+$fondo: #f2f2f2;
+$azul_primario: #5f6ad4;
+$azul_secundario: #7780da;
+$gris_oscuro: #3b3b3b;
+$gris_claro: #909090;
+$texto: #292929;
+$verde: #48b04d;
+
+$font-family: "Open Sans", Sans-serif;
+$font-family2: "Oswald", Sans-serif;
+$font-size: 16px;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: $fondo;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+
+.ad {
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+a {
+    color: $azul_primario;
+}
+
+
+/* importando header.scss */
+@import "header";
+
+
+/* importando main.scss */
+@import "main";
+
+
+/* importando sidebar.scss */
+@import "sidebar";
+
+
+/* importando footer.scss */
+@import "footer";
+
+
+/* importando mediaqueries.scss */
+@import "mediaqueries";
